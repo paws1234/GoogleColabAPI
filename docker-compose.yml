@@ -1,0 +1,8 @@
+services:
+  chat:
+    build: .
+    ports:
+      - "127.0.0.1:8000:8000"
+    environment:
+      API_URL: ${API_URL:-https://metal-masks-peel.loca.lt/v1/chat/completions}
+    restart: unless-stopped
