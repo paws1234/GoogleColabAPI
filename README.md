@@ -1,6 +1,6 @@
 # Prompt Chat
 
-A browser-based chat client for the OpenAI-compatible chat-completions API used by `pytest.py`. Run the app in Docker so Python and its dependencies do not need to be installed on your computer.
+A browser-based chat client for the OpenAI-compatible chat-completions API used by the original `pytest.py` script (now `app.py`). Run the app in Docker so Python and its dependencies do not need to be installed on your computer.
 
 ## Start
 
@@ -12,7 +12,7 @@ docker compose up --build
 
 Open [http://localhost:8000](http://localhost:8000). Stop the app with `Ctrl+C`; run `docker compose down` to remove its container.
 
-The default API URL is the one previously configured in `pytest.py`. To use a different compatible endpoint, set `API_URL` before starting:
+The default API URL is the one previously configured in the original script. To use a different compatible endpoint, set `API_URL` before starting:
 
 ```sh
 API_URL=https://your-api.example/v1/chat/completions docker compose up --build

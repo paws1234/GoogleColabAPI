@@ -13,7 +13,7 @@ API_URL = os.environ.get(
 )
 API_HEADERS = {"Bypass-Tunnel-Reminder": "true"}
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder="public/static", static_url_path="/static")
 
 
 def validate_api_url(api_url):
